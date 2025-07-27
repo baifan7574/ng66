@@ -15,7 +15,7 @@ exts = ['.jpg', '.jpeg', '.png', '.webp']
 
 def insert_ads(soup):
     if soup.body and not soup.find('script', src='ads.js'):
-        ads = soup.new_tag('script', src='ads.js')
+        ads = soup.new_tag('script', src='/ads.js')
         soup.body.append(ads)
 
 def load_keywords(category):
