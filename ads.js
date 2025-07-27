@@ -1,21 +1,13 @@
-<!-- ads.js 内容开始 -->
-// Monetag - In-Page Push (Anti-AdBlock)
-(function() {
-  var push = document.createElement('script');
-  push.src = 'https://fpyf8.com/88/tag.min.js';
-  push.async = true;
-  push.setAttribute('data-zone', '9632411');
-  push.setAttribute('data-cfasync', 'false');
-  document.head.appendChild(push);
-})();
+var monetag = monetag || {};
+monetag.cmd = monetag.cmd || [];
+monetag.cmd.push(function() {
+    monetag.fantasticTag.init({
+        zoneId: 9632429,
+    });
+});
 
-// Monetag - Vignette Banner (Anti-AdBlock)
-(function() {
-  var vignette = document.createElement('script');
-  vignette.src = 'https://fpyf8.com/88/tag.min.js';
-  vignette.async = true;
-  vignette.setAttribute('data-zone', '9632429');
-  vignette.setAttribute('data-cfasync', 'false');
-  document.head.appendChild(vignette);
-})();
-<!-- ads.js 内容结束 -->
+var s = document.createElement("script");
+s.type = "text/javascript";
+s.src = "https://a.monetag.com/fantastic-tag.min.js";
+s.async = true;
+document.head.appendChild(s);
