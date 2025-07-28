@@ -1,13 +1,18 @@
-// ✅ 正确完整的 Adcash 广告脚本（可放在 ads.js 中统一调用）
-document.write(`
-  <script id="aclib" type="text/javascript" src="https://acdn.adnxs.com/script/aclib.js"></script>
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', function () {
-      if (typeof aclib !== 'undefined' && aclib.runAutoTag) {
-        aclib.runAutoTag({
-          zoneId: 'jqeh7xu71d',
-        });
-      }
+// 加载 Adcash 主脚本
+var adcashLib = document.createElement("script");
+adcashLib.src = "https://acdn.adnxs.com/adcash/autotag.min.js";
+adcashLib.async = true;
+
+// 当主脚本加载完成后再执行 AutoTag
+adcashLib.onload = function () {
+  if (typeof aclib !== "undefined") {
+    aclib.runAutoTag({
+      zoneId: "jqeh7xu71d",
     });
-  </script>
-`);
+  } else {
+    console.error("Adcash script not loaded properly.");
+  }
+};
+
+// 插入到 <head> 里
+document.head.appendChild(adcashLib);
