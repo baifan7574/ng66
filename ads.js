@@ -1,18 +1,34 @@
-// 加载 Adcash 主脚本
-var adcashLib = document.createElement("script");
-adcashLib.src = "https://acdn.adnxs.com/adcash/autotag.min.js";
-adcashLib.async = true;
+(function () {
+  // === Monetag - Vignette Banner
+  var vignette = document.createElement("script");
+  vignette.src = "https://fpyf8.com/88/tag.min.js";
+  vignette.async = true;
+  vignette.setAttribute("data-zone", "9625896");
+  vignette.setAttribute("data-cfasync", "false");
+  document.head.appendChild(vignette);
 
-// 当主脚本加载完成后再执行 AutoTag
-adcashLib.onload = function () {
-  if (typeof aclib !== "undefined") {
-    aclib.runAutoTag({
-      zoneId: "jqeh7xu71d",
-    });
-  } else {
-    console.error("Adcash script not loaded properly.");
-  }
-};
+  // === Monetag - In-Page Push
+  var push = document.createElement("script");
+  push.src = "https://fpyf8.com/88/tag.min.js";
+  push.async = true;
+  push.setAttribute("data-zone", "9625893");
+  push.setAttribute("data-cfasync", "false");
+  document.body.appendChild(push);
 
-// 插入到 <head> 里
-document.head.appendChild(adcashLib);
+  // === AdCash - AutoTag
+  var aclibScript = document.createElement("script");
+  aclibScript.id = "aclib";
+  aclibScript.type = "text/javascript";
+  aclibScript.src = "//acscdn.com/script/aclib.js";
+  aclibScript.async = true;
+  aclibScript.onload = function () {
+    if (typeof aclib !== 'undefined') {
+      aclib.runAutoTag({
+        zoneId: "jqeh7xui71d"
+      });
+    } else {
+      console.error("AdCash AutoTag 未加载成功");
+    }
+  };
+  document.head.appendChild(aclibScript);
+})();
