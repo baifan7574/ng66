@@ -9,6 +9,7 @@ from datetime import datetime
 with open("config.json", "r", encoding="utf-8") as f:
     config = json.load(f)
 domain = config.get("domain", "https://example.com").rstrip("/")
+site_name = config.get("site_name", "Image Gallery")
 
 exts = ['.jpg', '.jpeg', '.png', '.webp']
 
@@ -88,7 +89,7 @@ def generate_pages_and_images():
   "description": "{generate_description(kw)}",
   "author": {{
     "@type": "Organization",
-    "name": "Gentleman's Frame"
+    "name": "{site_name}"
   }}
 }}
 </script>
