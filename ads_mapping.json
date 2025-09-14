@@ -1,0 +1,34 @@
+{
+  "global": {
+    "enable_on_home": true,
+    "enable_on_inner": true,
+    "popup_delay_ms": 150
+  },
+
+  "home": {
+    "top_banner": [
+      "<!-- 728x90 Leaderboard --><script type=\"text/javascript\" data-cfasync=\"false\" async src=\"https://poweredby.jads.co/js/jads.js\"></script><ins id=\"1100522\" data-width=\"728\" data-height=\"90\"></ins><script type=\"text/javascript\" data-cfasync=\"false\" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1100522});</script>"
+    ],
+    "bottom_banner": [
+      "<!-- 250x250 Bottom --><script type=\"text/javascript\" data-cfasync=\"false\" async src=\"https://poweredby.jads.co/js/jads.js\"></script><ins id=\"1100534\" data-width=\"250\" data-height=\"250\"></ins><script type=\"text/javascript\" data-cfasync=\"false\" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1100534});</script>"
+    ],
+    "popup": [
+      "<!-- JuicyAds PopUnders v3 --><script type=\"text/javascript\" src=\"https://js.juicyads.com/jp.php?c=4464w223v254u4r2o2f443d464&u=https%3A%2F%2Fwww.juicyads.rocks\"></script>"
+    ]
+  },
+
+  "inner": {
+    "top_banner": [
+      "<!-- 300x100 Mobile Top --><script type=\"text/javascript\" data-cfasync=\"false\" async src=\"https://poweredby.jads.co/js/jads.js\"></script><ins id=\"1100527\" data-width=\"300\" data-height=\"100\"></ins><script type=\"text/javascript\" data-cfasync=\"false\" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1100527});</script>"
+    ],
+    "inline_banner": [
+      "<!-- 300x250 Mobile Inline (非悬浮) --><script type=\"text/javascript\" data-cfasync=\"false\" async src=\"https://poweredby.jads.co/js/jads.js\"></script><ins id=\"1100524\" data-width=\"300\" data-height=\"250\"></ins><script type=\"text/javascript\" data-cfasync=\"false\" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1100524});</script>"
+    ],
+    "bottom_banner": [
+      "<!-- 300x50 Mobile Bottom --><script type=\"text/javascript\" data-cfasync=\"false\" async src=\"https://poweredby.jads.co/js/jads.js\"></script><ins id=\"1100529\" data-width=\"300\" data-height=\"50\"></ins><script type=\"text/javascript\" data-cfasync=\"false\" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1100529});</script>"
+    ],
+    "popup": [
+      "<!-- JuicyAds PopUnders v3 --><script type=\"text/javascript\" src=\"https://js.juicyads.com/jp.php?c=4464w223v254u4r2o2f443d464&u=https%3A%2F%2Fwww.juicyads.rocks\"></script>"
+    ]
+  }
+}
